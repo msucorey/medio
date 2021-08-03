@@ -3,13 +3,14 @@ import { StyleSheet, Image } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import tacos from '../assets/images/tacos.png';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tacos</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Image source={require('../assets/images/tacos.png')} style={styles.image} />
+      <Image source={tacos} style={styles.image} />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
   );
