@@ -26,3 +26,4 @@ const StateProvider = ({
 const useStateValue = () => React.useContext(StateContext);
 
 export { StateProvider, useStateValue };
+export type { Action, Reducer, SimpleGlobalState };
